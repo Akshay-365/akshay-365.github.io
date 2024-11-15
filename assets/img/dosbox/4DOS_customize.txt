@@ -1,0 +1,37 @@
+BASE:
+$E[0;32m Akshay $E[0;35m $M $E[0;33m[$P] $E[0m $g
+
+
+32: Green
+33: Yellow
+34: Blue
+35: Magenta (Purple)
+36: Cyan
+37: White
+
+$T: 4:22:56 (hh:mm:ss)
+$M: 4:22p (hh:mm a/p)
+$N: User name
+$P: C:/ (Path)
+$g: > (code for >)
+$D: Mon 11/13/2024
+$E: "$e[0;33m" for yellow (Escape sequence for colors and text formatting)
+$E[0m$: sets to default.
+
+##########################################
+EXTRAS/BONUS
+##########################################
+4DOS.INI config
+
+CursorIns      = 010         ; [100] Cursor shape in insert mode (0-100)
+                             ; Also see SETDOS /S
+CursorOver     = 010         ; [015] Cursor shape in overstrike mode (0-100)
+                             ; Also see SETDOS /S
+EditMode       = Insert      ; [Overstrike] Editing mode for CommandLine
+                             ; Insert | Overstrike
+InputColors    = Cyan ON Black ; (5.00) Command-line input colors
+
+
+
+BeepFreq = 0     ; [60] A balanced frequency between bass and sharp sound
+BeepLength =     ; [002] Longer duration for a more "full" sound
