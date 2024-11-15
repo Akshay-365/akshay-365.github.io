@@ -29,7 +29,10 @@ analytics: # Google Analytics
 
 # Build Settings
 markdown: kramdown
+highlighter: rouge
+
 plugins:
+  - jekyll-assets # If you use jekyll-assets for image management
   - jekyll-sitemap
   - jekyll-paginate
   - jemoji
