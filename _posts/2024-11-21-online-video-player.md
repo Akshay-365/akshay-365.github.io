@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "Online video player"
+title: "Online Video Player"
 date: 2024-11-21 14:00:00
 categories: video streaming
 ---
 
+<link rel="stylesheet" href="/assets/css/DPlayer.min.css">
 <div class="header section_wrap" style="height:auto; justify-content:flex-start;">
     <div class="container section_layout section_layout_feature section_layout_vertical">
         <div class="header-title-section">
