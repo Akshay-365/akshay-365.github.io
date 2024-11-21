@@ -1,1 +1,83 @@
+.form-grp {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 0.11rem;
+  }
+  
+  .form-grp .form-input,
+  .form-grp .form-input-alt {
+    font-size: 1rem;
+    padding: 7px 20px;
+    border-radius: 8px;
+    width: 48%;
+  }
+  
+  .form-grp .form-btn {
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 7px 30px;
+    border-radius: 0 8px 8px 0;
+    color: #fff !important;
+    background-color: #445de2;
+    cursor: pointer;
+    border: none;
+  }
+  
+  .form-btn.btn-type {
+    opacity: 0.5;
+    border: 1px solid #7b7b7b;
+    background: transparent;
+    margin-right: 1rem;
+  }
+  
+  .form-btn.btn-type.active {
+    opacity: 1;
+    border-color: #536dff;
+    color: #536dff !important;
+    font-weight: 600;
+  }
+  
+
+/* Title */
+.header-title {
+    font-size: 2.5rem;
+    font-weight: 700; /* Make the title bold */
+    color: #f5f1f1; /* Darker color for better contrast */
+    text-align: center; /* Center the title */
+}
+
+/* Subtitle */
+.header-title-text {
+    font-size: 1.2rem;
+    font-weight: 400; /* Lighter weight for the subtitle */
+    color: #ada2a2; /* Slightly lighter gray for the subtitle */
+    text-align: center; /* Center the subtitle */
+}
+
+/* Set black background for the entire body or a specific section */
+body {
+    background-color: #000; /* Black background */
+    color: #fff; /* White text for contrast */
+    font-family: 'Arial', sans-serif; /* Basic, clean font */
+    margin: 0;
+    padding: 0;
+}
+
+/* Section-specific styling if needed */
+.header {
+    background-color: #111; /* Darker section background */
+    padding: 20px;
+}
+
+.content_wrap {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+.form-grp {
+    margin-top: 20px;
+}
 
