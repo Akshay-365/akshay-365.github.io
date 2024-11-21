@@ -43,3 +43,4 @@ categories: video streaming
   });
 </script>
 
+<link rel="stylesheet" href="/assets/css/dplayer_styles.css">
