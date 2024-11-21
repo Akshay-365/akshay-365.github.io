@@ -1,15 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test MP4 URLs with DPlayer</title>
-
-    <!-- Include DPlayer CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/dplayer/dist/DPlayer.min.css">
-
-</head>
-<body>
+---
+layout: post
+title: "Test MP4 URLs with DPlayer"
+date: 2024-11-21 14:00:00
+categories: video streaming
+---
 
 <div class="header section_wrap" style="height:auto; justify-content:flex-start;">
     <div class="container section_layout section_layout_feature section_layout_vertical">
@@ -27,15 +21,11 @@
 
             <!-- DPlayer container -->
             <div id="dplayer-container" style="width: 100%; max-width: 720px; height: 405px; margin-top: 20px;"></div>
-
         </div>
-
-
     </div>
 </div>
 
-<!-- Include DPlayer JS -->
-<script src="DPlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/dplayer/dist/DPlayer.min.js"></script>
 
 <script>
   // Initialize DPlayer with the default MP4 video URL
@@ -52,6 +42,4 @@
       player.switchVideo({ url: videoUrl, type: 'mp4' }); // Switch to new video URL
   });
 </script>
-<link rel="stylesheet" href="style.css">
-</body>
-</html>
+
