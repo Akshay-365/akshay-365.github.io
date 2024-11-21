@@ -64,12 +64,6 @@ body {
     padding: 0;
 }
 
-/* Section-specific styling if needed */
-.header {
-    background-color: #111; /* Darker section background */
-    padding: 20px;
-}
-
 .content_wrap {
     display: flex;
     justify-content: flex-start;
