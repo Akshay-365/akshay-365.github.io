@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Test MP4 URLs with DPlayer"
+title: "Online video player"
 date: 2024-11-21 14:00:00
 categories: video streaming
 ---
@@ -25,7 +25,7 @@ categories: video streaming
     </div>
 </div>
 
-<script src="https://cdn.jsdelivr.net/npm/dplayer/dist/DPlayer.min.js"></script>
+<script src="/assets/js/DPlayer.min.js"></script>
 
 <script>
   // Initialize DPlayer with the default MP4 video URL
