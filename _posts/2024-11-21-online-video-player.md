@@ -35,10 +35,23 @@ tags: [video, stream , favourite, pin]
   // Initialize DPlayer with the default MP4 video URL
   const player = new DPlayer({
       element: document.getElementById('dplayer-container'),
-      video: {
+       screenshot: true,
+       autoplay: true,
+       preload: 'auto',
+       logo: '/assets/img/profile-pic.png',
+       subtitle: {
+         url: 'dplayer.vtt',
+         type: 'webvtt',
+         fontSize: '25px',
+         bottom: '10%',
+         color: '#b7daff',
+        },
+
+       video: {
           url: 'https://live-par-2-abr.livepush.io/vod/bigbuckbunnyclip.mp4',
-          thumbnail: '/assets/img/default_img.png',
-      }
+          pic: '/assets/img/default_img.png',
+          type: 'auto',
+       }
   });
 
   // Update video source when the "Play" button is clicked
