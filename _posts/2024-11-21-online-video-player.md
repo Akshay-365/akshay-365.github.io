@@ -37,6 +37,7 @@ tags: [video, stream , favourite, pin]
       element: document.getElementById('dplayer-container'),
       video: {
           url: 'https://live-par-2-abr.livepush.io/vod/bigbuckbunnyclip.mp4',
+          thumbnail: '/assets/img/default_img.png',
       }
   });
 
