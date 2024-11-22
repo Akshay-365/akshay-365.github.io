@@ -36,7 +36,7 @@ tags: [video, stream , favourite, pin]
   const player = new DPlayer({
       element: document.getElementById('dplayer-container'),
        screenshot: true,
-       autoplay: true,
+    //    autoplay: true,
        preload: 'auto',
        logo: '/assets/img/profile-pic.png',
        subtitle: {
