@@ -2,7 +2,10 @@
 layout: post
 title: "Online Video Player"
 date: 2024-11-21 14:00:00
+description: Online video player platform. # Add post description (optional)
+img: /video_player.jpg # Add image post (optional)
 categories: video streaming
+tags: [video, stream , favourite, pin]
 ---
 
 <link rel="stylesheet" href="/assets/css/DPlayer.min.css">
