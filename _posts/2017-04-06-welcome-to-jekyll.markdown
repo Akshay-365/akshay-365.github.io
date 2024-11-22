@@ -1,15 +1,13 @@
 ---
 layout: post
-title: "Welcome to Jekyll!"
-date: 2017-04-06 13:32:20 +0300
-description: You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. # Add post description (optional)
+title: "Welcome to Blog!"
+date: 2024-11-20 13:32:20 +0300
 img:  # Add image post (optional)
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
 
-Jekyll also offers powerful support for code snippets:
+
+Posts offers powerful support for code snippets:
 
 {% highlight ruby %}
 def print_hi(name)
@@ -20,6 +18,21 @@ print_hi('Tom')
 {% endhighlight %}
 
 Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
+
+Other writing methods:
+* Hexagon shoreditch beard
+* Intelligentsia narwhal austin
+* Literally meditation four
+* Microdosing hoodie woke
+
+and
+
+>Hexagon shoreditch beard, man braid blue bottle green juice thundercats viral migas next level ugh. Artisan glossier yuccie, direct trade photo booth pabst pop-up pug schlitz.
+
+and
+
+![I and My friends]({{site.baseurl}}/assets/img/we-in-rest.jpg)
+
 
 [jekyll-docs]: https://jekyllrb.com/docs/home
 [jekyll-gh]:   https://github.com/jekyll/jekyll
