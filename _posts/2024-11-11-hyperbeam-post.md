@@ -9,11 +9,6 @@ tags: [Programming, Learn] # add tag
 
 # Here we go!
 
-            <div>
-            <head>
-                <meta charset="UTF-8">
-                <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                <title>Hyperbeam Example</title>
                 <style>
                     html, body {
                         font-family: Arial, sans-serif;
@@ -32,7 +27,6 @@ tags: [Programming, Learn] # add tag
                         position: relative;
                     }
                 </style>
-            </head>
             <body>
                 <div id="container"></div>
 
@@ -56,5 +50,4 @@ tags: [Programming, Learn] # add tag
                     initHyperbeam();
                 </script>
             </body>
-            </div>
         
