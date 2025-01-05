@@ -6,7 +6,7 @@ img: chrome-dino.jpg # Add image post (optional)
 tags: [Programming, Learn] # add tag
 ---
 
-<iframe src="https://astraos-chromedino.static.hf.space/index.html"
+<!-- <iframe src="https://astraos-chromedino.static.hf.space/index.html"
         width="100%" 
         height="600px" 
         frameborder="0"
@@ -15,7 +15,7 @@ tags: [Programming, Learn] # add tag
         sandbox="allow-scripts allow-same-origin allow-popups"
         loading="lazy"
         style="border: none; margin: 0; padding: 0;">
-</iframe>
+</iframe> -->
 
 <!-- Include the CSS for styling -->
 <link rel="stylesheet" href="{{ '/assets/chromeDino/style.css' | relative_url }}">
