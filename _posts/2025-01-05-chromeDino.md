@@ -9,6 +9,6 @@ tags: [Programming, Learn] # add tag
 <iframe src="https://astraos-chromedino.static.hf.space/index.html" 
         sandbox="allow-scripts allow-same-origin"
         width="100%" 
-        height="600px"
-        style="border: none;">
+        height="600px" 
+        style="border: none; z-index: 999;">
 </iframe>
