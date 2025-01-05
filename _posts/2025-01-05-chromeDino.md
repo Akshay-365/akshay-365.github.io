@@ -6,9 +6,13 @@ img: chrome-dino.jpg # Add image post (optional)
 tags: [Programming, Learn] # add tag
 ---
 
-<iframe src="https://astraos-chromedino.static.hf.space/index.html" 
-        sandbox="allow-scripts allow-same-origin"
+<iframe src="https://astraos-chromedino.static.hf.space/index.html"
         width="100%" 
         height="600px" 
-        style="border: none; z-index: 999;">
+        frameborder="0"
+        allow="autoplay; picture-in-picture; fullscreen"
+        allowfullscreen
+        sandbox="allow-scripts allow-same-origin allow-popups"
+        loading="lazy"
+        style="border: none; margin: 0; padding: 0;">
 </iframe>
