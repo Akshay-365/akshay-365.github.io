@@ -27,7 +27,7 @@ tags: [Programming, Learn] # add tag
 
 # The telegram bot link:
 
-<iframe src="https://web.telegram.org/k/#?tgaddr=tg%3A%2F%2Fresolve%3Fdomain%3Dpython3463_bot"
+<iframe src="https://t.me/python3463_bot"
         width="100%" 
         height="600px" 
         frameborder="0"
@@ -37,5 +37,10 @@ tags: [Programming, Learn] # add tag
         loading="lazy"
         style="border: none; margin: 0; padding: 0;">
 </iframe>
+
+<script async src="https://telegram.org/js/telegram-widget.js?7"
+        data-telegram-chat="python3463_bot" data-size="large">
+</script>
+
 
 <a href="https://t.me/python3463_bot" target="_blank" class="ytstream-bot">Bot here</a>
