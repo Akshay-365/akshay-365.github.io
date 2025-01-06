@@ -17,6 +17,8 @@ tags: [Programming, Learn] # add tag
         style="border: none; margin: 0; padding: 0;">
 </iframe>
 
+<hr />
+
 <iframe src="https://yellow-river-3935.ploomber.app/"
         width="100%" 
         height="600px" 
