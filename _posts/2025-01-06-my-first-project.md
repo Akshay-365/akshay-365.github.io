@@ -19,16 +19,7 @@ tags: [Programming, Learn] # add tag
 
 <hr />
 
-<iframe src="https://yellow-river-3935.ploomber.app/"
-        width="100%" 
-        height="600px" 
-        frameborder="0"
-        allow="autoplay; picture-in-picture; fullscreen"
-        allowfullscreen
-        sandbox="allow-scripts allow-same-origin allow-popups"
-        loading="lazy"
-        style="border: none; margin: 0; padding: 0;">
-</iframe>
+<a href="https://yellow-river-3935.ploomber.app/" target="_blank" class="ytstream-backup">Backup(mirror-host)</a>
 
 <hr />
 <hr />
