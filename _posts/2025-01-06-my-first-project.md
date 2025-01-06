@@ -44,6 +44,9 @@ tags: [Programming, Learn] # add tag
 
 <script async src="https://telegram.me/share/url?url=https://t.me/python3463_bot"></script>
 
+<button onclick="window.open('https://t.me/python3463_bot', '_blank')">Open Python Bot</button>
+
+
 
 
 <a href="https://t.me/python3463_bot" target="_blank" class="ytstream-bot">Bot here</a>
