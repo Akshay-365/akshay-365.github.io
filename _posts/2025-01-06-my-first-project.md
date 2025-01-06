@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Youtube streamer app.
-date: 2025-01-03 00:00:00 +0300
+date: 2025-01-06 00:00:00 +0300
 img: ytstream.jpg # Add image post (optional)
 tags: [Programming, Learn] # add tag
 ---
