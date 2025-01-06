@@ -27,7 +27,7 @@ tags: [Programming, Learn] # add tag
 
 # The telegram bot link:
 
-<iframe src="https://t.me/python3463_bot"
+<iframe src="https://cors-proxy.fringe.zone/https://t.me/python3463_bot"
         width="100%" 
         height="600px" 
         frameborder="0"
