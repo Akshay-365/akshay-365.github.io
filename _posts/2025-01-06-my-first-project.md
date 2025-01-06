@@ -26,4 +26,16 @@ tags: [Programming, Learn] # add tag
 <hr />
 
 # The telegram bot link:
+
+<iframe src="https://t.me/python3463_bot"
+        width="100%" 
+        height="600px" 
+        frameborder="0"
+        allow="autoplay; picture-in-picture; fullscreen"
+        allowfullscreen
+        sandbox="allow-scripts allow-same-origin allow-popups"
+        loading="lazy"
+        style="border: none; margin: 0; padding: 0;">
+</iframe>
+
 <a href="https://t.me/python3463_bot" target="_blank" class="ytstream-bot">Bot here</a>
