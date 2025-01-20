@@ -106,7 +106,7 @@ Full command to run code-server:
  also know this more:
 *Optional: Run in the Background
 If you want to keep cloudflared running in the background, use nohup:
-` nohup cloudflared tunnel --url http://localhost:8082 > cloudflared.log 2>&1 & `
+` nohup cloudflared tunnel --url http://localhost:8081 > cloudflared.log 2>&1 & `
 
 # MORE TO EXPLORE:
 BORE [https://github.com/ekzhang/bore] similar to gsocket:
