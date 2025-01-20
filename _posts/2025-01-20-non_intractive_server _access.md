@@ -92,6 +92,21 @@ Ngrok tcp addressing/forwarding:
 # may be only one task at a time in ngrok allowed or may be paid fot tcp..
 
 
+# Very simple, go as you click:
+* Cloudflared (Argo Tunnel):
+```
+apt-get install wget
+wget https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64.deb
+dpkg -i cloudflared-linux-amd64.deb
+```
+` cloudflared --version `
+`` cloudflared tunnel --url http://localhost:8081 ``
+Full command to run code-server:
+` code-server --bind-addr 0.0.0.0:7860 --auth none & cloudflared tunnel --url http://localhost:7860 `
+ also know this more:
+*Optional: Run in the Background
+If you want to keep cloudflared running in the background, use nohup:
+` nohup cloudflared tunnel --url http://localhost:8082 > cloudflared.log 2>&1 & `
 
 # MORE TO EXPLORE:
 BORE [https://github.com/ekzhang/bore] similar to gsocket:
