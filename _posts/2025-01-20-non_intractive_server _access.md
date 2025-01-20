@@ -90,3 +90,22 @@ ssh -p 8082 username@remote-server-ip
 Ngrok tcp addressing/forwarding:
  `ngrok tcp 8081`
 # may be only one task at a time in ngrok allowed or may be paid fot tcp..
+
+
+
+# MORE TO EXPLORE:
+BORE [https://github.com/ekzhang/bore] similar to gsocket:
+exposes local ports to a remote server, bypassing standard NAT connection firewalls.
+commands:
+`
+cargo install bore-cli
+bore local 8000 --to bore.pub
+`
+and 
+```
+# on the server
+bore server --secret my_secret_string
+
+# on the client
+bore local <LOCAL_PORT> --to <TO> --secret my_secret_string
+```
