@@ -109,3 +109,7 @@ bore server --secret my_secret_string
 # on the client
 bore local <LOCAL_PORT> --to <TO> --secret my_secret_string
 ```
+And other tools like:
+- https://github.com/exposesh
+- https://telebit.cloud/
+- https://github.com/anderspitman/awesome-tunneling?tab=readme-ov-file #awesome-tools
