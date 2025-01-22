@@ -33,11 +33,6 @@ NOW FROM HERE, there are several ways to run vncserver:
 `export DISPLAY=:1` u can check it by `echo $DISPLAY`
 * go to `.vnc` folder u can see it by `ls -la`. `cd .vnc`
 * now create a new file `nano xstartup` or `nano /root/.vnc/xstartup`
-  ensure `chmod +x /root/.vnc/xstartup` #for setting executable
-  optional:
-  ``chown root:root /root/.vnc/xstartup
-    chmod 755 /root/.vnc/xstartup``
-
 * write in file:
 ```
 # content of the file ~/.vnc/xstartup for a VNCServer with XFCE Desktop
@@ -52,18 +47,25 @@ x-window-manager &
 ```
 if u want u can also create .Xresources (not necessary.)
 
+!! ensure `chmod +x /root/.vnc/xstartup` #for setting executable (every time u touch the file.)
+  optional:
+  ``chown root:root /root/.vnc/xstartup
+    chmod 755 /root/.vnc/xstartup``
+
 * ensure novnc is running first `/opt/novnc/utils/novnc_proxy --vnc localhost:5901`
 then run `vncserver :1` 
 u can kill vncserver by `vncserver -kill :1`
 
 Here we go open port 6080(may be) url and enjoy.
 
-@ other way:
+@ other way (might be usefull):
  if `vncserver:1` is giving errors then just try this command
 `tigervncserver -xstartup /usr/bin/xterm`
 and then go to novnc website.
 and in novnc site's virtual terminal.
 enter the command `xfce4-session` or `xfce4-session --display=:1`
+or u can just run the apps only without desktop enviroment.
+like x11-apps: `apt install -y x11-apps`  and then use `xclock` or any just search on it(apps).
 
 @ another way:
 do not use 'xstartup', simply just launch vncserver normally.
@@ -71,6 +73,12 @@ do not use 'xstartup', simply just launch vncserver normally.
 `xfce4-session --display=:1`
 and start in novnc site.
 u can stop xfce4 by this command: `xfce4-session-logout --logout`
+
+@@@ HOT: Use SSH with X11 Forwarding (For GUI Apps):
+Run GUI Apps from the Container: Once logged in, you can run GUI applications (like xclock, xterm, etc.), and they will display on your local machine.
+1. `apt install -y openssh-server`
+2. `ssh -X user@localhost -p 2222` # modify accordingly (u know it..😎)
+
 
 TIPS: use `-geometry` in vncserver for full-fit resolution.
 `vncserver :1 -geometry 1535x824` #for my laptop.
