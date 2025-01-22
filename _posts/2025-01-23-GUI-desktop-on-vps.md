@@ -65,6 +65,7 @@ do not use 'xstartup', simply just launch vncserver normally.
 `vncserver :1` and then manually lauch xfce4-session from main terminal where u are currently working.
 `xfce4-session --display=:1`
 and start in novnc site.
+u can stop xfce4 by this command: `xfce4-session-logout --logout`
 
 TIPS: use `-geometry` in vncserver for full-fit resolution.
 `vncserver :1 -geometry 1535x824` #for my laptop.
