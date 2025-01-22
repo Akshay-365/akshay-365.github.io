@@ -85,7 +85,7 @@ the url can be used for ssh to turn local ip [hostname -I] into public like.
   
 Access SSH from @CLIENT:
 ssh -p 8082 username@remote-server-ip
-# change accordingly.   (play around it..)
+# change accordingly.   (play around it..) [❌ but do not waste time.]
 
 Ngrok tcp addressing/forwarding:
  `ngrok tcp 8081`
