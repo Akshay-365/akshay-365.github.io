@@ -32,7 +32,7 @@ NOW FROM HERE, there are several ways to run vncserver:
 * first of all confirm you have desktop enable on :1 or any..
 `export DISPLAY=:1` u can check it by `echo $DISPLAY`
 * go to `.vnc` folder u can see it by `ls -la`. `cd .vnc`
-* now create a new file `nano xstartup`
+* now create a new file `nano xstartup` or `nano /root/.vnc/xstartup`
 * write in file:
 ```
 # content of the file ~/.vnc/xstartup for a VNCServer with XFCE Desktop
