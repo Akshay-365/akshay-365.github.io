@@ -33,6 +33,11 @@ NOW FROM HERE, there are several ways to run vncserver:
 `export DISPLAY=:1` u can check it by `echo $DISPLAY`
 * go to `.vnc` folder u can see it by `ls -la`. `cd .vnc`
 * now create a new file `nano xstartup` or `nano /root/.vnc/xstartup`
+  ensure `chmod +x /root/.vnc/xstartup` #for setting executable
+  optional:
+  ``chown root:root /root/.vnc/xstartup
+    chmod 755 /root/.vnc/xstartup``
+
 * write in file:
 ```
 # content of the file ~/.vnc/xstartup for a VNCServer with XFCE Desktop
