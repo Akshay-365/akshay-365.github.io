@@ -128,3 +128,39 @@ And other tools like:
 - https://github.com/exposesh
 - https://telebit.cloud/
 - https://github.com/anderspitman/awesome-tunneling?tab=readme-ov-file #awesome-tools
+
+  ######################################################################################################################################
+  ######################################################################################################################################
+  ######################################################################################################################################
+
+  commands i use often to setup code-server and stuff.
+  ```
+apt-get update && apt-get install -y openssh-server
+apt install curl -y
+apt-get install build-essential -y
+apt install libssl-dev -y
+apt-get install git -y
+apt install automake -y
+apt install autoconf -y
+apt install nano -y
+apt install npm -y
+apt install systemctl -y
+apt install net-tools -y
+curl -fsSL https://code-server.dev/install.sh | sh
+apt install wget -y
+wget https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64.deb 
+dpkg -i cloudflared-linux-amd64.deb
+
+# Run it after above installation
+code-server --bind-addr 0.0.0.0:7860 --auth none & cloudflared tunnel --url http://localhost:7860
+
+# for gsocket:
+curl -sSL https://gsocket.io/install.sh | bash
+# [then just go to gsocket folder and do]
+cd gsocket
+./install.sh
+# (then again a new gsocket folder will be created go inside that)
+cd gsocket
+# now do
+make install
+```
