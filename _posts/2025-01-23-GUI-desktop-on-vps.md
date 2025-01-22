@@ -7,7 +7,7 @@ tags: [GUI, ssh, remote, xfce] # add tag
 ---
 
 # HOW CAN U HAVE A DESKTOP REMOTE ENVIROMENT.
-
+(focuses on xfce4 / xfce4-session for some xstartup commands.)
 Step 1: Update and Install Required Packages
 apt update && apt upgrade -y
 apt install -y xfce4 xfce4-goodies tigervnc-standalone-server wget curl git dbus-x11
