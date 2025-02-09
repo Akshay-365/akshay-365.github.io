@@ -169,6 +169,7 @@ Let's continue with Falkon.
 apt install falkon
 ```
 ⚠️ It might not open directly! Try this:
+
 1️⃣ Navigate to `/usr/bin/`, open terminal, then run:
    ```bash
    sudo env QTWEBENGINE_DISABLE_SANDBOX=1 ./MyApp  # Replace MyApp with falkon or any app having same problem.
