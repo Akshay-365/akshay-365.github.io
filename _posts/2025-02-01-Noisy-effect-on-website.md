@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Noise"
-date: 2024-11-15 00:00:00 +0530
+date: 2025-02-01 00:00:00 +0530
 img: noise.jpg # Add figcaption (optional)
 tags: [noise,gaussian,wave,fluid]
 ---
