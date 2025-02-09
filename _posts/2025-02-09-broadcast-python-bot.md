@@ -2,7 +2,8 @@
 layout: post
 title: "Broadcast bot"
 date: 2025-02-09 00:00:00 +0000
-tags: [bot,webhook,fastapi,endpoint]
+img: broadcast.jpg
+tags: [broadcast, bot, python]
 ---
 
 # The code to which can detect the users connected to bot and can send alerts to the users.
