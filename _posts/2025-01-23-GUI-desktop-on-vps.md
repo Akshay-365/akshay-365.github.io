@@ -163,7 +163,6 @@ vncserver :1 -geometry 1535x824  # Example for my laptop
 ## 🌐 Inside GUI Desktop
 
 ### 🔍 Install a browser (e.g., Falkon or Firefox via Git):
-*(I like Firefox much.)*
 Let's continue with Falkon.
 ```bash
 apt install falkon
@@ -174,6 +173,8 @@ apt install falkon
    ```bash
    sudo env QTWEBENGINE_DISABLE_SANDBOX=1 ./MyApp  # Replace MyApp with falkon or any app having same problem.
    ```
+   *(Btw, I like Firefox much, you can install that via binaries.)*
+
 2️⃣ Alternative (not tested yet):
    - Create a new Linux user for a non-root environment:
    ```bash
