@@ -2,9 +2,8 @@
 layout: post
 title: "Noise"
 date: 2024-11-15 00:00:00 +0530
-description: A guide to my configuration for my Dosbox using 4Dos. # Add post description (optional)
-fig-caption: dosbox # Add figcaption (optional)
-tags: [Dosbox,4dos,afd,assembly,asm,nasm]
+img: noise.jpg # Add figcaption (optional)
+tags: [noise,gaussian,wave,fluid]
 ---
 
 
