@@ -38,7 +38,8 @@ ln -s ../novnc_proxy .    # This symbolic link creation may give errors ignore t
 
 ---
 
-## ⚡ NOW FROM HERE, there are several ways to run vncserver:
+## ⚡ NOW FROM HERE,
+there are several ways to run vncserver:
 ### ✅ What I prefer (xstartup):
 1️⃣ First, confirm you have desktop enabled on `:1` or any..
    ```bash
@@ -140,6 +141,7 @@ xfce4-session-logout --logout
 ### 🔥 HOT: Use SSH with X11 Forwarding (For GUI Apps):
 Run GUI apps from the container and display them locally!
 Once logged in, you can run GUI applications (like xclock, xterm, etc.), and they will be displayed on your local machine.
+
 1️⃣ Install OpenSSH:
    ```bash
    apt install -y openssh-server
