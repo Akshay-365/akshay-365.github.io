@@ -1,7 +1,7 @@
 ---
 layout: post
 title: GUI remote desktop
-date: 5025-01-23 00:00:00 +0300
+date: 2025-01-23 00:00:00 +0300
 img: hello-world.jpg # Add image post (optional)
 tags: [GUI, ssh, remote, xfce] # add tag
 ---
