@@ -1,9 +1,9 @@
 ---
 layout: post
 title: "Bot via Webhook"
-date: 2024-11-15 00:00:00 +0530
-fig-caption: dosbox # Add figcaption (optional)
-tags: [Dosbox,4dos,afd,assembly,asm,nasm]
+date: 2025-05-09 00:00:00 +0000
+fig-caption: Webhook # Add figcaption (optional)
+tags: [bot,webhook,fastapi,endpoint]
 ---
 
 To set up a **Webhook URL** for your Telegram bot running on **Hugging Face Spaces**, follow these steps:
@@ -17,7 +17,7 @@ To set up a **Webhook URL** for your Telegram bot running on **Hugging Face Spac
 - Make sure your Hugging Face Space provides a **public HTTPS URL**. (Make the space public for convenience.)
 
 ### **3. Set the Webhook for Your Bot**
-- Use this API request to set the webhook (u can run this anywhere, just run it once.):
+- Use this API request to set the webhook (you can run this anywhere, it just need to run once.):
   ```bash
   curl -X POST "https://api.telegram.org/bot<YOUR_BOT_TOKEN>/setWebhook" \
        -H "Content-Type: application/json" \
@@ -38,8 +38,9 @@ https://api.telegram.org/bot<YOUR_BOT_TOKEN>/getWebhookInfo
 ```
 
 <hr />
+<hr />
 
-# Below is a complete guide on how to containerize your Telegram webhook bot (using FastAPI) with Docker. This setup lets you develop and deploy your bot entirely within a Docker container, which you can then deploy to Hugging Face Spaces (or run locally).
+## Below is a complete guide on how to containerize your Telegram webhook bot (using FastAPI) with Docker. This setup lets you develop and deploy your bot entirely within a Docker container, which you can then deploy to Hugging Face Spaces (or run locally).
 
 ---
 
@@ -167,5 +168,6 @@ Hugging Face Spaces supports Docker-based deployments. To deploy:
 ### NOTEs:
 - We don't need to use the bot Token in the code because it's already confingured with the webhook.
 - The code is not based on any wrapper/library of telegram it just made of of pure original telegram, uses mostly json based communication.
+- The reason why this can't use any other library like (telebot etc.) because in those libraries thier is the ability to receive the messages from webhook but there's no fuction to send the message via webhook (FastAPI endpoint). At Least It haven't come across yet to me. More to explore!
 - app = FastAPI() --> This must be there in the code for FastAPI endpoint and webhook connection.
 - ENJOY THE BOT!
