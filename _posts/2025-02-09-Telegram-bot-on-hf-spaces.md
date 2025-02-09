@@ -2,7 +2,6 @@
 layout: post
 title: "Bot via Webhook"
 date: 2025-05-09 00:00:00 +0000
-fig-caption: Webhook # Add figcaption (optional)
 tags: [bot,webhook,fastapi,endpoint]
 ---
 
