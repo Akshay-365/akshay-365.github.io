@@ -3,7 +3,7 @@ layout: post
 title: "Remote SSH."
 date: 2025-01-20 14:00:00
 description: Remote SSH. # Add post description (optional)
-img: /video_player.jpg # Add image post (optional)
+img: remote_ssh.jpg # Add image post (optional)
 categories: remote ssh
 tags: [ssh, tunnel, socket]
 ---
