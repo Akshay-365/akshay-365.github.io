@@ -336,6 +336,11 @@ RUN mkdir -p /home/user/.ssh && \
 RUN sed -i 's/^user:x:1000:/user:x:0:/' /etc/passwd && \
     chown -R user:user /home/user
 
+# or
+# RUN useradd -m -u 0 -o -s /bin/bash user && \
+#     echo "user ALL=(ALL) NOPASSWD:ALL" > /etc/sudoers.d/user
+
+
 # ----------------------------
 # (Continue with installations that require root.)
 # Switch back to root to install Code Server, Cloudflare Tunnel, Gsocket, etc.
