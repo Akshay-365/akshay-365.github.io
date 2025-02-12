@@ -62,3 +62,5 @@ tags: [video, stream , favourite, pin]
 </script>
 
 <link rel="stylesheet" href="/assets/css/dplayer_styles.css">
+
+[Github](https://github.com/DIYgod/DPlayer)
