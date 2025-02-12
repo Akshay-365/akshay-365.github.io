@@ -254,3 +254,122 @@ EXPOSE 7860
 # Start SSH server wrapped with gsocket
 CMD ["gsocket", "-s", "killpass", "/usr/sbin/sshd", "-D"]
 ```
+
+
+@ i was working on it, but it cannot establish ssh connection.
+
+```
+# Use Python 3.9 base image
+FROM python:3.9
+
+# Avoid interactive prompts during package installs
+ENV DEBIAN_FRONTEND=noninteractive
+
+# Install system dependencies
+RUN apt-get update && apt-get install -y \
+    openssh-server \
+    curl \
+    build-essential \
+    libssl-dev \
+    git \
+    automake \
+    autoconf \
+    nano \
+    npm \
+    systemctl \
+    net-tools \
+    wget \
+    sudo \
+    gnupg \
+    ca-certificates \
+    libcap2-bin && \
+    rm -rf /var/lib/apt/lists/*
+
+# Ensure the SSH runtime directory exists
+RUN mkdir -p /var/run/sshd
+
+# Generate SSH host keys (as root)
+RUN ssh-keygen -A
+
+# Set SSH host private key permissions to 644
+RUN chmod 644 /etc/ssh/ssh_host_*_key
+
+# Update SSH configuration:
+#   - Change port 22 to 7860.
+#   - Disable password authentication.
+#   - Disable PAM.
+#   - And (optionally) disallow SSH login as root.
+RUN sed -i -E 's/#?Port 22/Port 7860/' /etc/ssh/sshd_config && \
+    sed -i -E 's/#?PasswordAuthentication yes/PasswordAuthentication no/' /etc/ssh/sshd_config && \
+    sed -i -E 's/#?UsePAM yes/UsePAM no/' /etc/ssh/sshd_config && \
+    sed -i -E 's/#?PermitEmptyPasswords .*/PermitEmptyPasswords yes/' /etc/ssh/sshd_config && \
+    sed -i -E 's/#?ChallengeResponseAuthentication .*/ChallengeResponseAuthentication no/' /etc/ssh/sshd_config && \
+    sed -i -E 's/#?PermitRootLogin .*/PermitRootLogin without-password/' /etc/ssh/sshd_config 
+
+# Update SSH client configuration to set PermitRootLogin to forced-commands-only
+# RUN echo "PermitRootLogin forced-commands-only" >> /etc/ssh/ssh_config
+
+# Restart both ssh and sshd services to apply the changes
+# RUN service ssh restart && service sshd restart
+
+# ----------------------------
+# Create a non‑root user and grant sudo privileges
+# (We initially give it UID 1000.)
+# ----------------------------
+RUN useradd -m -u 1000 -s /bin/bash user && \
+    usermod -aG sudo user && \
+    echo "user ALL=(ALL) NOPASSWD:ALL" > /etc/sudoers.d/user
+
+# Create the .ssh directory for the user, add an authorized_keys file, and set permissions
+RUN mkdir -p /home/user/.ssh && \
+    echo "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQC8MNnoeALNR....+YZU4VE8xu/f9cZuS0+x4Qv35fHrYr7dqwsLGuibLPt4lfXtLHbBUKjzmv1nSXc3YDwbqD3Uic6MA0F+yYHgBubqT5WAtitzeLYEaWK7gfK4qvz0AI0wLdTvFfvlIEKJCP0dKplGXE92JCkNEsK8b4P3U43D1lmLCn0kN64lsK6oxXWXzw== your_email@example.com" \
+         > /home/user/.ssh/authorized_keys && \
+    chmod 700 /home/user/.ssh && \
+    chmod 600 /home/user/.ssh/authorized_keys && \
+    chown -R user:user /home/user/.ssh
+
+# ----------------------------
+# Give the "user" account full root privileges
+# by changing its UID from 1000 to 0.
+# (This way no sudo/privilege‑escalation is necessary at runtime.)
+# ----------------------------
+RUN sed -i 's/^user:x:1000:/user:x:0:/' /etc/passwd && \
+    chown -R user:user /home/user
+
+# ----------------------------
+# (Continue with installations that require root.)
+# Switch back to root to install Code Server, Cloudflare Tunnel, Gsocket, etc.
+# ----------------------------
+USER root
+
+# Install Code Server
+RUN curl -fsSL https://code-server.dev/install.sh | sh
+
+# Install Cloudflare Tunnel
+RUN wget https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64.deb && \
+    dpkg -i cloudflared-linux-amd64.deb
+
+# Install Gsocket
+RUN curl -sSL https://gsocket.io/install.sh | bash && \
+    cd gsocket && ./install.sh && make install
+
+# (We no longer install or use gosu since our "user" is now effectively root.)
+
+# ----------------------------
+# Set working directory and copy application files
+# ----------------------------
+WORKDIR /app
+COPY . /app
+
+# ----------------------------
+# Switch to the "user" account (which now has UID 0)
+# ----------------------------
+USER user
+
+# Expose the SSH port (optional)
+EXPOSE 7860
+
+# Start the SSH server (with gsocket as desired) in the foreground
+CMD ["gsocket", "-s", "hipass", "/usr/sbin/sshd", "-D"]
+
+```
