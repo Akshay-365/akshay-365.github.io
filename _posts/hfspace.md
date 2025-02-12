@@ -185,3 +185,72 @@ COPY . /app
 # Start the SSH server (wrapped with gsocket) in the foreground.
 CMD ["/bin/sh", "-c", "gsocket -s fvfdxr45evvf /usr/sbin/sshd -D"]
 ```
+
+@ just another simplified, nice , but not root priviledge.
+
+```
+# Use Python 3.9 base image
+FROM python:3.9
+
+# Install dependencies
+RUN apt-get update && apt-get install -y \
+    systemctl \
+    openssh-server \
+    curl \
+    build-essential \
+    libssl-dev \
+    git \
+    automake \
+    autoconf \
+    nano \
+    npm \
+    systemctl \
+    net-tools \
+    wget \
+    sudo \
+    gnupg \
+    ca-certificates \
+    libcap2-bin && \
+    rm -rf /var/lib/apt/lists/*
+    
+# Create a user
+RUN useradd -m -u 1000 -s /bin/bash user
+
+# Generate SSH host keys properly
+# Ensure the SSH runtime directory exists
+RUN mkdir -p /var/run/sshd
+
+# Generate SSH host keys automatically (as root)
+RUN ssh-keygen -A
+
+# Set SSH host private key permissions to 644 (as requested)
+RUN chmod 644 /etc/ssh/ssh_host_*_key
+
+
+# Configure SSH
+RUN sed -i -E 's/#?Port 22/Port 7860/' /etc/ssh/sshd_config && \
+    sed -i -E 's/#?PasswordAuthentication yes/PasswordAuthentication no/' /etc/ssh/sshd_config && \
+    sed -i -E 's/#?UsePAM yes/UsePAM no/' /etc/ssh/sshd_config && \
+    sed -i -E 's/#?PermitEmptyPasswords .*/PermitEmptyPasswords yes/' /etc/ssh/sshd_config && \
+    sed -i -E 's/#?ChallengeResponseAuthentication .*/ChallengeResponseAuthentication no/' /etc/ssh/sshd_config && \
+    sed -i -E 's/#?PermitRootLogin .*/PermitRootLogin forced-commands-only/' /etc/ssh/sshd_config
+
+# Force user to always get a root shell
+RUN echo 'Match User user\n\tForceCommand /bin/bash' >> /etc/ssh/sshd_config
+
+# Install Gsocket
+RUN curl -sSL https://gsocket.io/install.sh | bash && \
+    cd gsocket && ./install.sh && make install
+
+# Set up SSH authorized keys
+RUN mkdir -p /home/user/.ssh && \
+    echo "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQC8MNnoeALNRO.....WXzw== your_email@example.com" > /home/user/.ssh/authorized_keys && \
+    chmod 700 /home/user/.ssh && chmod 600 /home/user/.ssh/authorized_keys && \
+    chown -R user:user /home/user/.ssh
+
+# Expose SSH port
+EXPOSE 7860
+
+# Start SSH server wrapped with gsocket
+CMD ["gsocket", "-s", "killpass", "/usr/sbin/sshd", "-D"]
+```
