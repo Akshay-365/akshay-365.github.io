@@ -2,7 +2,7 @@
 layout: post
 title: "Bot via Webhook"
 date: 2025-02-09 00:00:00 +0000
-img: webhook.jpg
+img: webhook2.jpg
 tags: [bot,webhook,fastapi,endpoint]
 ---
 
