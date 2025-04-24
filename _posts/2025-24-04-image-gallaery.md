@@ -7,7 +7,7 @@ tags: [nx-storage, gallery, ai] # add tag
 ---
 
 # Image gallery:
-## I have created this gallery app which is alternative to [![Pinterest](https://www.pinterest.com/ideas/)].
+## I have created this gallery app which is alternative to [Pinterest](https://www.pinterest.com/ideas/).
 ## The technologies (framework, language) used in this repo are:
 * Gradio
 * FastAPI
@@ -16,14 +16,11 @@ tags: [nx-storage, gallery, ai] # add tag
 # Here's the Demo of the project.
 
 <iframe
-	src="https://astraos-img-gallery.hf.space"
-	frameborder="0"
-	width="850"
-	height="450"
-    allow="autoplay; picture-in-picture; fullscreen"
-    style="border: none; margin: 0; padding: 0;"
+  src="https://astraos-img-gallery.hf.space"
+  frameborder="0"
+  allow="autoplay; picture-in-picture; fullscreen"
+  style="border: none; margin: 0; padding: 0; width: 100%; height: 100%;"
 ></iframe>
 
 # Direct link to space/app.
-## [Image Gallery ✨](https://astraos-img-gallery.hf.space)
-
+## [Image Gallery ✨](https://astraos-img-gallery.hf.space){:target="_blank"}
