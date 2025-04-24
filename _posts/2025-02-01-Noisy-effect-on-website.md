@@ -2,7 +2,7 @@
 layout: post
 title: "Noise"
 date: 2025-02-01 00:00:00 +0530
-img: noise.jpg # Add figcaption (optional)
+img: noise2.jpg # Add figcaption (optional)
 tags: [noise,gaussian,wave,fluid]
 ---
 
@@ -236,6 +236,9 @@ and i like it's footer `https://deta.surf/footer-32-yesdither-nomatte.gif`
 </body>
 </html>
 ```
+
+![Ripple Noise](/assets/img/noise.jpg)
+
 ## Wavy effect comparison:
 ```
 <html lang="en">
