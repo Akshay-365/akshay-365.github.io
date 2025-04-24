@@ -1,7 +1,8 @@
 ---
 layout: post
-title: terminal on hf
+title: Terminal on HuggingfaceSpace
 date: 2025-01-28 00:00:00 +0300
+img: terminal.jpg
 tags: [Programming, Learn] # add tag
 ---
 
