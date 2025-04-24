@@ -2,7 +2,7 @@
 layout: post
 title: "Broadcast bot"
 date: 2025-02-09 00:00:00 +0000
-img: broadcast2.png
+img: broadcast.jpg
 tags: [broadcast, bot, python]
 ---
 
@@ -167,6 +167,8 @@ try:
 except Exception as e:
     logging.error(f"Bot polling error: {e}")
 ```
+
+![Broadcast](/assets/img/broadcast2.png)
 
 ## The above code can detect the very last message, if the last message was sent by the user then the bot auto sends the alert.
 - The bot only works for auto send if the last message in the conversation was from the user.
