@@ -2,7 +2,7 @@
 layout: post
 title: "Broadcast bot"
 date: 2025-02-09 00:00:00 +0000
-img: broadcast2.jpg
+img: broadcast2.png
 tags: [broadcast, bot, python]
 ---
 
