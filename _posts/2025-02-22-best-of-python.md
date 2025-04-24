@@ -11,7 +11,7 @@ tags: [Programming, Learn] # add tag
  ```python
  print("The sum of", " and ".join(map(str, nums := [int(input(f"Enter your {i} number: ")) for i in ["first", "second"]])), "is:", sum(nums))
  ```
-![Python Image](python_img.webp)
+![Python Image](/assets/img/python_img.webp)
 
 ## If you get this then you are having some idea of:
 - **List Comprehensions**
