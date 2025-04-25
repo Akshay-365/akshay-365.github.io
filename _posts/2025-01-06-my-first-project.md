@@ -2,7 +2,7 @@
 layout: post
 title: Youtube streamer app.
 date: 2025-01-06 00:00:00 +0300
-img: tele_bot.png # Add image post (optional)
+img: bot.png # Add image post (optional)
 tags: [Programming, Learn] # add tag
 ---
 
