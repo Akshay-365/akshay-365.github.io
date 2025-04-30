@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Code Injection & Manipulation"
+title: "Code Alteration"
 date: 2025-04-30 00:00:00 +0530
 img: proxy.png # Add image post (optional)
 tags: [blob,injection,proxy]
