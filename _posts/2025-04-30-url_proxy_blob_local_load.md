@@ -8,7 +8,7 @@ tags: [blob,injection,proxy]
 
 # 🌐 URL Proxy, Blob, Local Load, Code Injection & Element Manipulation
 
-## ✨ A Journey Toward a Beautiful AI-Powered Presentation ✨
+## ✨ A Journey Toward a Beautiful World of Code Injection. ✨
 
 While working on crafting an elegant AI-generated presentation, I stumbled upon a fascinating website — [**Gamma.app**](https://gamma.app/). 🎨✨ This site offers an impressive feature:
 **it allows you to transform presentations into webpages!**  🚀
@@ -80,7 +80,6 @@ To fix this, I injected a JavaScript snippet (placed inside the `<head>`) to **r
 ### 🧼 JS Element Remover Code:
 ```html
 <script>
-<script>
 (function() {
     // List of selectors to target
     const SELECTORS = [
@@ -150,7 +149,7 @@ Here's how I first constructed the custom HTML:
   <iframe id="custom-iframe" sandbox="allow-scripts allow-same-origin"></iframe>
   <script>
   (async function() {
-    const targetUrl = 'https://meager-insect-x9oto7l.gamma.site/';
+    const targetUrl = 'https://akshay-365-9vx6m3k.gamma.site/';
     const proxyUrl = `https://embed-proxy-prod.gamma-app.workers.dev/?alt_url=${targetUrl}`;
 
     try {
@@ -235,9 +234,6 @@ const scriptContent = `
 const injection = `<script>${scriptContent}<\/script>`;
 
 
-
-
-
       // Inject script into <head> to avoid breaking body scripts
       if (html.includes('</head>')) {
         html = html.replace(/<\/head>/i, injection + '</head>');
@@ -294,7 +290,7 @@ I refined the code, resulting in the following improvements:
   <iframe id="custom-iframe" sandbox="allow-scripts allow-same-origin allow-top-navigation-by-user-activation allow-popups"></iframe>
   <script>
   (async function() {
-    const targetUrl = 'https://scriptfunctionconst-sele-aijki1r.gamma.site/';
+    const targetUrl = 'https://akshay-365-9vx6m3k.gamma.site/';
     const proxyUrl = `https://embed-proxy-prod.gamma-app.workers.dev/?alt_url=${targetUrl}`;
 
     try {
