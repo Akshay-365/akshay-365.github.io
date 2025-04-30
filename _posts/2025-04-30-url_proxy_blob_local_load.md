@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "URL Proxy, Blob, Local Load, Code Injection & Element Manipulation"
-date: 2024-11-15 00:00:00 +0530
-img: /dosbox/proxy.png # Add image post (optional)
+date: 2025-04-30 00:00:00 +0530
+img: proxy.png # Add image post (optional)
 tags: [blob,injection,proxy]
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Image Gallery
-date: 2025-02-24 00:00:00 +0300
+date: 2025-04-24 00:00:00 +0300
 img: img_gallery.jpg
 tags: [nx-storage, gallery, ai] # add tag
 ---
