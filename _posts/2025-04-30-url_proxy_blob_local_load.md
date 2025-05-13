@@ -132,7 +132,7 @@ To fix this, I injected a JavaScript snippet (placed inside the `<head>`) to **r
 
 ---
 
-## 🧩 Building the Custom Embed Page (Version 1)
+## ↪ 🧩 Building the Custom Embed Page (Version 1)
 
 ### Now coming back to Custom HTML File Approach. 
 Here's how I first constructed the custom HTML:
