@@ -67,6 +67,8 @@ To overcome the limitations, I took a different route: **creating a custom HTML 
 
 > 🛑 Spoiler alert: **It worked!** 😉✔️
 
+### Click here for [Preview](https://astraos-url-proxy-blob-local-load.static.hf.space){:target="_blank"}
+
 But before that... another experiment.
 
 ---
