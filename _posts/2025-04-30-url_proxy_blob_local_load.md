@@ -67,7 +67,7 @@ To overcome the limitations, I took a different route: **creating a custom HTML 
 
 > 🛑 Spoiler alert: **It worked!** 😉✔️
 
-### Click here for [Preview](https://astraos-url-proxy-blob-local-load.static.hf.space){:target="_blank"}
+### Click here for [Preview.](https://astraos-url-proxy-blob-local-load.static.hf.space){:target="_blank"}
 
 But before that... another experiment.
 
@@ -134,6 +134,7 @@ To fix this, I injected a JavaScript snippet (placed inside the `<head>`) to **r
 
 ## 🧩 Building the Custom Embed Page (Version 1)
 
+### Now coming back to Custom HTML File Approach. 
 Here's how I first constructed the custom HTML:
 ```html
 <!DOCTYPE html>
