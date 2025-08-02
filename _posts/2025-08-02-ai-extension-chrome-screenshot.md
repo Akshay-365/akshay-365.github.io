@@ -1,6 +1,6 @@
 ---
 layout: post
-title: One-Click Screenshot to AI: My Extension Mod 
+title: One-Click Screenshot to AI- My Extension Mod 
 date: 2025-08-02 00:00:00 +0300
 description: A breakdown of how I modified the "GoFullPage" Chrome extension using JavaScript. This tutorial covers adding new UI elements, handling image data, and injecting scripts to automate uploading a screenshot to a third-party web application like Google AI Studio.
 tags: [JavaScript, ChromeExtension, GenerativeAI, Automation] # add tag
