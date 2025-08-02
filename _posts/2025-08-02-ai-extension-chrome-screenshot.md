@@ -49,8 +49,8 @@ For those who want to dive into the technical details, I've packaged everything 
 
 For your convenience, here are the diff analyses that break down the changes:
 
-*   **📊 Directory Comparison Overview:** [Click for PDF](!/assets/img/extension-mod/changes.pdf)
-*   **🔬 Deep Diff Analysis:** [View as PDF](!/assets/img/extension-mod/diffscope.pdf)
+*   **📊 Directory Comparison Overview:** [Click for PDF](/assets/img/extension-mod/changes.pdf)
+*   **🔬 Deep Diff Analysis:** [View as PDF](/assets/img/extension-mod/diffscope.pdf)
 
 ### 📊 Directory Comparison Overview
 
