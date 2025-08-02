@@ -62,7 +62,7 @@ For your convenience, here are the diff analyses that break down the changes:
 
 For a complete line-by-line comparison, explore the interactive diff report embedded below. This shows every single code change between the original and my modified version.
 
-<iframe src="index.html" width="100%" height="800px" style="border:1px solid #ddd; background: #fff;">
+<iframe src="/assets/img/extension-mod/index.html" width="100%" height="800px" style="border:1px solid #ddd; background: #fff;">
    <p>Your browser does not support iframes. <a href="/assets/img/extension-mod/index.html">View the interactive diff analysis</a>.</p>
 </iframe>
 
