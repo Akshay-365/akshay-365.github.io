@@ -44,18 +44,18 @@ For those who want to dive into the technical details, I've packaged everything 
 *   **🤖 My AI-Extended Version:** [**Download AI-Extended Version.zip**][ai-zip]
 *   **📄 Original GoFullPage Version:** [**Download Original Version.zip**][original-zip]
 
-[ai-zip]: 8.5_0%20-%20extended%20by%20me.zip
-[original-zip]: 8.5_0%20-%20original.zip
+[ai-zip]: /assets/img/extension-mod/8.5_0%20-%20extended%20by%20me.zip
+[original-zip]: /assets/img/extension-mod/8.5_0%20-%20original.zip
 
 For your convenience, here are the diff analyses that break down the changes:
 
-*   **📊 Directory Comparison Overview:** [Click for PDF](!changes.pdf)
-*   **🔬 Deep Diff Analysis:** [View as PDF](!diffscope.pdf)
+*   **📊 Directory Comparison Overview:** [Click for PDF](!/assets/img/extension-mod/changes.pdf)
+*   **🔬 Deep Diff Analysis:** [View as PDF](!/assets/img/extension-mod/diffscope.pdf)
 
 ### 📊 Directory Comparison Overview
 
-<iframe src="changes.pdf" width="100%" height="600px" style="border:1px solid #ddd;">
-   <p>Your browser does not support PDFs. <a href="URL_TO_YOUR/changes.pdf">Download the PDF</a>.</p>
+<iframe src="/assets/img/extension-mod/changes.pdf" width="100%" height="600px" style="border:1px solid #ddd;">
+   <p>Your browser does not support PDFs. <a href="/assets/img/extension-mod/changes.pdf">Download the PDF</a>.</p>
 </iframe>
 
 ### 🔬 Deep Diff Analysis
