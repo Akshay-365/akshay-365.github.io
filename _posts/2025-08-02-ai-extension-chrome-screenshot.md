@@ -9,7 +9,7 @@ tags: [JavaScript, ChromeExtension, GenerativeAI, Automation] # add tag
 
 # My Journey: Hacking a Chrome Extension to Automate a GenAI Course 🚀
 
-This story begins with a simple goal during my Tata micro-internship on Generative AI 🎓. I wanted to find a clever way to automate the course, not by skipping videos, but by using the course material itself—specifically, the images and screenshots—as input for an AI.
+This story begins with a simple goal during my Tata micro-internship on Generative AI 🎓. I wanted to find a clever way to automate the course, by using the course material itself—specifically, the images and screenshots—as input for an AI.
 
 ### The Spark of an Idea 💡
 
@@ -19,8 +19,8 @@ My plan was to take full-page screenshots of the course content and feed them to
 
 To bring this idea to life, I chose a few key tools:
 
-*   **The AI Brain:** **Google's AI Studio (Gemini)**. It's fantastic for multimodal tasks, including understanding images.
-*   **The Screenshot Tool:** I needed a reliable way to capture full web pages. After a quick search, I settled on a popular Chrome extension: **"GoFullPage - Full Page Screen Capture."**
+*   **The AI Brain:** [**Google's AI Studio (Gemini)**](#gemini-reference-link). It's fantastic for multimodal tasks, including understanding images.
+*   **The Screenshot Tool:** I needed a reliable way to capture full web pages. After a quick search, I settled on a popular Chrome extension: [**GoFullPage - Full Page Screen Capture.**](#gofullpage-reference-links)
 
 ### Hitting a Wall 🚧
 
@@ -50,14 +50,14 @@ For those who want to dive into the technical details, I've packaged everything 
 
 For your convenience, here are the diff analyses that break down the changes:
 
-*   **📊 Directory Comparison Overview:** [Click for PDF](/assets/img/extension-mod/changes.pdf)
-*   **🔬 Deep Diff Analysis:** [View as PDF](/assets/img/extension-mod/diff.pdf)
-
 ### 📊 Directory Comparison Overview
 
 <iframe src="/assets/img/extension-mod/changes.pdf" width="100%" height="600px" style="border:1px solid #ddd;">
    <p>Your browser does not support PDFs. <a href="/assets/img/extension-mod/changes.pdf">Download the PDF</a>.</p>
 </iframe>
+
+*   **📊 Directory Comparison Overview:** [Click for PDF](/assets/img/extension-mod/changes.pdf)
+
 
 ### 🔬 Deep Diff Analysis
 
@@ -66,6 +66,8 @@ For a complete line-by-line comparison, explore the interactive diff report embe
 <iframe src="/assets/img/extension-mod/index.html" width="100%" height="800px" style="border:1px solid #ddd; background: #fff;">
    <p>Your browser does not support iframes. <a href="/assets/img/extension-mod/index.html">View the interactive diff analysis</a>.</p>
 </iframe>
+
+*   **🔬 Deep Diff Analysis:** [View as PDF](/assets/img/extension-mod/diff.pdf)
 
 ---
 
@@ -101,3 +103,49 @@ This file connects the new UI button to the background logic.
 ### Conclusion 🚀
 
 This project was an amazing learning experience. It started as a simple idea to automate a course and turned into a deep dive into how Chrome extensions work. It's a great example of how, with a little curiosity, you can modify existing tools to perfectly fit your workflow.
+
+---
+
+### Bonus: My Personal Lightweight Script 🧑‍🔧
+
+While modifying GoFullPage was a fantastic learning experience, I also developed a separate, minimalist screenshot extension from scratch. This custom script became my primary tool for the internship course because it was perfectly streamlined for one specific task: quickly capturing screenshots without any extra overhead.
+
+It serves as a great barebones example if you're interested in building your own simple Chrome extension.
+
+*   **Download My Custom Extension:** [**custom_extension.zip**](/assets/img/extension-mod/custom_extension.zip)
+
+---
+## References
+
+### GoFullPage Reference Links
+
+Here are the official links for the GoFullPage extension:
+
+*   **Official Website:** [https://gofullpage.com/](https://gofullpage.com/)
+*   **Chrome Web Store:** [https://chromewebstore.google.com/detail/gofullpage-full-page-scre/fdpohaocaechififmbbbbbknoalclacl](https://chromewebstore.google.com/detail/gofullpage-full-page-scre/fdpohaocaechififmbbbbbknoalclacl)
+
+### Gemini Reference Link
+
+* **Official Website:** [https://aistudio.google.com/prompts/new_chat](https://aistudio.google.com/prompts/new_chat)
+
+### The Tools used for Documentation:
+
+### - *Recursive Diff Tools:*
+
+* **Diffoscope:** [https://try.diffoscope.org/](https://try.diffoscope.org/)
+
+* **Diffnow:** [https://www.diffnow.com/compare-files](https://www.diffnow.com/compare-files)
+
+### - *Document conversion Tools:*
+
+* **Sodapdf:** [https://www.sodapdf.com/pdf-tools/html-to-pdf/](https://www.sodapdf.com/pdf-tools/html-to-pdf/)
+
+### Extras:
+### Another Great Tool Worth Mentioning: FireShot 🔥
+
+During my research, I came across another excellent screenshot extension called **FireShot**. In some scenarios, especially on very complex or dynamic pages, I found it to be highly effective and reliable. It offers a robust set of features, making it a powerful alternative to GoFullPage.
+
+If you're looking for another top-tier screenshot tool, I highly recommend giving it a try.
+
+*   **Official Website:** [https://getfireshot.com/](https://getfireshot.com/)
+*   **Chrome Web Store:** [https://chromewebstore.google.com/detail/take-webpage-screenshots/mcbpblocgmgfnpjjppndjkmgjaogfceg](https://chromewebstore.google.com/detail/take-webpage-screenshots/mcbpblocgmgfnpjjppndjkmgjaogfceg)
