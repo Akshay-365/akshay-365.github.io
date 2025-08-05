@@ -3,7 +3,7 @@ layout: post
 title: My Telegram Bot That Keeps Lightning AI Awake 🤖
 date: 2025-08-05 09:00:00 +0300
 description: A step-by-step tutorial on how I built a "ping-pong" bot using Python, Gradio, and Telegram to prevent my Lightning AI studio from auto-shutting down during long-running tasks.
-img: /assets/img/keep_alive/keep_alive_banner.jpg # Optional: A banner image for your post
+img: keep_alive/keep_alive_banner.png # Optional: A banner image for your post
 tags: [Python, Automation, Telegram, Gradio, DevOps, CloudIDE]
 ---
 
