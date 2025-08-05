@@ -38,18 +38,18 @@ This constant, tiny chatter between the bots would be enough to keep the studio 
 I've packaged the entire project for you. You can download the files below to see exactly how it works and set it up yourself.
 
 *   **🤖 Main Application (`main.py`):** Launches the bots and the Gradio web interface.
-    *   [**⬇️ Download `main.py`**][main-py]
+    *   [**⬇️ Download**][main-py]
 *   **📤 Ping Scheduler (`ping_scheduler.py`):** Sends "ping" messages and includes the watchdog.
-    *   [**⬇️ Download `ping_scheduler.py`**][ping-scheduler-py]
+    *   [**⬇️ Download`**][ping-scheduler-py]
 *   **📥 Pong Responder (`pong_bot.py`):** Listens for pings and replies with "pong."
-    *   [**⬇️ Download `pong_bot.py`**][pong-bot-py]
+    *   [**⬇️ Download**][pong-bot-py]
 *   **✅ Project Dependencies (`requirements.txt`):** All the necessary packages.
-    *   [**⬇️ Download `requirements.txt`**][requirements-txt]
+    *   [**⬇️ Download**][requirements-txt]
 
-[main-py]: /assets/code/keep_alive/main.py
-[ping-scheduler-py]: /assets/code/keep_alive/ping_scheduler.py
-[pong-bot-py]: /assets/code/keep_alive/pong_bot.py
-[requirements-txt]: /assets/code/keep_alive/requirements.txt
+[main-py]: /assets/img/keep_alive/main.py
+[ping-scheduler-py]: /assets/img/keep_alive/ping_scheduler.py
+[pong-bot-py]: /assets/img/keep_alive/pong_bot.py
+[requirements-txt]: /assets/img/keep_alive/requirements.txt
 
 ---
 
