@@ -149,3 +149,22 @@ If you're looking for another top-tier screenshot tool, I highly recommend givin
 
 *   **Official Website:** [https://getfireshot.com/](https://getfireshot.com/)
 *   **Chrome Web Store:** [https://chromewebstore.google.com/detail/take-webpage-screenshots/mcbpblocgmgfnpjjppndjkmgjaogfceg](https://chromewebstore.google.com/detail/take-webpage-screenshots/mcbpblocgmgfnpjjppndjkmgjaogfceg)
+
+---
+
+# Blog expansion on August 28, 2025:
+
+I have discovered a powerful, built-in feature in Google Chrome's Developer Tools for capturing full-page screenshots. These instructions are a great way to take a screenshot of an entire webpage, including the content that is only visible after scrolling.
+
+This functionality is part of the Command Menu within Chrome DevTools, which provides a quick way to access various development and debugging tools.
+
+### Step-by-Step Guide to a Full-Page Screenshot in Chrome:
+
+For those who want to follow your method, here are the detailed steps:
+
+1.  **Open Developer Tools:** On the desired webpage, press `Ctrl+Shift+I` (on Windows/Linux) or `Cmd+Option+I` (on Mac) to open the Developer Tools panel.
+2.  **Open the Command Menu:** With the Developer Tools open, press `Ctrl+Shift+P` (on Windows/Linux) or `Cmd+Shift+P` (on Mac). This will open a "Run" command prompt.
+3.  **Find the Screenshot Command:** In the command prompt, start typing the word "screenshot". You will see a list of available screenshot options.
+4.  **Capture the Full-Size Screenshot:** From the list of options, select "Capture full size screenshot". Chrome will then automatically capture the entire page and save it as a PNG file in your "Downloads" folder.
+
+This developer feature is a handy alternative to using browser extensions or other software for taking scrolling screenshots. In addition to a full-page screenshot, you'll also notice other options in the command menu, such as capturing a screenshot of a specific area or just the visible portion of the page.
